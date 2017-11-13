@@ -6,12 +6,12 @@ $(document).on("pagecreate","#pageone",function(){
       $(this).text(rand);
       
       if(rand){
-          //navigator.notification.beep(1);
+          navigator.notification.beep(1);
           navigator.vibrate(2000);
 
       }
       else{
-          //navigator.notification.beep(2);
+          navigator.notification.beep(2);
           navigator.vibrate(2000);
 
       }
