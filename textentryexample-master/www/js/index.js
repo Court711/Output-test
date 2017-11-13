@@ -1,18 +1,21 @@
 $(document).on("pagecreate","#pageone",function(){
-  $('#submitButton').on("click", function(){
-    submitText();
+    
+  $('#tap1').on("tap", function(){
+    
+      var rand = random();
+      $(this).text(rand);
+      
+      if(rand){
+          navigator.notification.beep(1); //beep once
+      }
+      else{
+          navigator.notification.beep(2); //beep twice
+      }
+      
+      
   });            
 });            
 
-
-function submitText() {
-	var text = $('#textinput').val();
-	alert(text);
-}
-
-function storeValue(key, value) {
-	//add some code to store the key-value pair in persistant storage 
-}
 
 function random() {
     return !Math.round(Math.random());
