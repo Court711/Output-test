@@ -6,14 +6,12 @@ $(document).on("pagecreate","#pageone",function(){
       $(this).text(rand);
       
       if(rand){
-          navigator.notification.beep(1); //beep once
-        //vibrate for 2000 milliseconds
+          navigator.notification.beep(1);
           navigator.vibrate(2000);
 
       }
       else{
-          navigator.notification.beep(2); //beep twice
-          //vibrate for 2000 milliseconds
+          navigator.notification.beep(2);
           navigator.vibrate(2000);
 
       }
